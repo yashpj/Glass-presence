@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+    /* to display in center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass 
+{
+    background-color: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,.7),rgba(255,255,255,.3));
+    border-radius: 2rem;
+    /* so that it is in front of the circles if we add z-index=5 in circles they will be on top , higher the avlue higher up in stack*/
+    z-index: 2;
+}
+
+.circle1,.circle2{
+    background-color: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,.7),rgba(255,255,255,.3));
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+}
+
+.circle1{
+  top:5%;
+  right:15%;
+}
+
+.circle2{
+  bottom: 5%;
+  left: 15%;
+}
