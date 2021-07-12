@@ -4,6 +4,26 @@
     box-sizing: border-box;
 }
 
+h1{
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+  font-size: 2rem;
+}
+
+h3,
+p {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+h2 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
 main{
     min-height: 100vh;
     background: linear-gradient(to right top,#65dfc9,#6cdbeb);
@@ -15,14 +35,17 @@ main{
 
 .glass 
 {
+    font-family: 'Poppins', sans-serif;
     background-color: white;
-    min-height: 60vh;
+    min-height: 80vh;
     width: 60%;
     background: linear-gradient(to right bottom, rgba(255,255,255,.7),rgba(255,255,255,.3));
     border-radius: 2rem;
     /* so that it is in front of the circles if we add z-index=5 in circles they will be on top , higher the avlue higher up in stack*/
     z-index: 2;
     backdrop-filter: blur(2rem);
+    display:flex;
+    margin: 2rem;
 }
 
 .circle1,.circle2{
@@ -42,5 +65,87 @@ main{
 .circle2{
   bottom: 2.5%;
   left: 10%;
+}
+
+.dashboard{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(to right bottom, rgba(255,255,255,.7),rgba(255,255,255,.3));
+  border-radius: 2rem;
+}
+
+.user
+{
+  padding: 2rem 0rem;
+}
+
+.link{
+  display:flex;
+  align-items: center;
+  margin: 2rem 0rem;
+  padding: 1rem 5rem;
+}
+
+.link h3{
+  padding: 0rem 2rem;
+}
+
+.games{
+  flex:2;
+}
+
+.pro{
+  background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+  border-radius: 2rem;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  position: relative;
+  flex: 1;
+  margin: 1rem 0rem;
+}
+
+.pro img{
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.pro h3{
+  width: 40%;
+  color: white;
+  font-weight: 600;
+}
+
+/*GAMES */
+
+.status{
+  margin-bottom : 3rem;
+}
+
+.status input{
+  background: linear-gradient(to right bottom, rgba(255,255,255,.7),rgba(255,255,255,.3));
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  width: 50%;
+}
+
+.games{
+  margin: 5rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card{
+  background: linear-gradient(to left top, rgba(255,255,255,1), rgba(255,255,255,0.8));
+  display: flex;
+  margin: 2rem 0rem;
+  padding: 2rem;
+  border-radius: 2rem;
 }
 
